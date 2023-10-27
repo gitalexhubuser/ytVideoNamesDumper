@@ -27,19 +27,22 @@ def findAllVideosInFile(filePath):
         source = file.read()
         # print(f"source: {source}")
 
-        if source is not None:
-            soup = BeautifulSoup(source, "lxml")
-            # print(f"soup: {soup}")
 
-            # Имя
-            videos = soup.find_all(class_="style-scope ytd-rich-grid-media")  # Замените "your-class-name" на класс, который вы ищете
+        # soup = BeautifulSoup(source, "lxml")
+        soup = BeautifulSoup(source, 'html.parser')
+        # print(f"soup: {soup}")
 
-            for video in videos:
-                print(video)
-                # print(video.text)
+        # Нахождение элемента <a> с id="video-title-link"
+        a_tag = soup.find('a', id='video-title-link')
+
+        # Получение значения атрибута "title"
+        title = a_tag['title']
+
+        print(title)
 
 
 
 if __name__ == "__main__":
     # downloadSiteToFile(url)
-    findAllVideosInFile("./Assets/index.html")
+    # findAllVideosInFile("./Assets/index.html")
+    findAllVideosInFile(r"E:\PythonProjects\ytVideoNamesDumper\Assets\index.html")
