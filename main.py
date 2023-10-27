@@ -13,6 +13,3 @@ response = requests.get(url)
 soup = BeautifulSoup(response.text, "lxml")
 
 print("soup", type(soup)) # soup <class 'bs4.BeautifulSoup'>
-
-https://github.com/gitalexhubuser/BogatovSirusCharDumper
-git@github.com:gitalexhubuser/ytVideoNamesDumper.git
