@@ -16,8 +16,7 @@ def downloadSiteToFile(url):
         # print("source:", source)
 
         soup = BeautifulSoup(source, "xml")  # html.parser lxml
-
-        # Поиск всех тегов media:title и извлечение текста после каждого из них
+        
         media_title_tags = soup.find_all('media:title')
         for media_title_tag in media_title_tags:
             text_after_title = media_title_tag.get_text(strip=True)

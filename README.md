@@ -4,10 +4,11 @@
 с использованием Selector yt-formatted-string#video-title
 type SelectorText
 Multiple yes
-Parent selectors 	_root
+Parent selectors _root
 
-Проект похож на [BogatovSirusCharDumper
-](https://github.com/gitalexhubuser/BogatovSirusCharDumper)
+Проект похож на [BogatovSirusCharDumper](https://github.com/gitalexhubuser/BogatovSirusCharDumper)
+
+- [x] "RSS reader" последних 15 роликов
 
 ---
 
