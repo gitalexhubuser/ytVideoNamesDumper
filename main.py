@@ -2,8 +2,8 @@ import requests
 from bs4 import BeautifulSoup
 import json
 
-# URL сайта, с которого нужно собрать информацию
-url = 'https://www.youtube.com/@alex.dubovyck.videos/videos'
+# url = 'https://www.youtube.com/@alex.dubovyck.videos/videos'
+url = 'https://www.youtube.com/feeds/videos.xml?channel_id=UCjDdSdLJbbV0UBtzKpClmig'
 
 def downloadSiteToFile(url):
 
@@ -13,36 +13,19 @@ def downloadSiteToFile(url):
         print("Ответ 200!")
 
         source = response.text
-        print("source:", source)
+        # print("source:", source)
 
-        # Запись содержимого в файл
-        with open("./Assets/index.html", "w", encoding="utf-8") as file:
-            file.write(source)
+        soup = BeautifulSoup(source, "xml") # html.parser lxml
 
-        print("Сайт успешно сохранен в файле index.html")
+        # Поиск тега media:title и извлечение текста после него
+        media_title_tag = soup.find('media:title')
+        text_after_title = media_title_tag.get_text(strip=True)
 
-
-def findAllVideosInFile(filePath):
-    with open(filePath, encoding="utf8", errors='ignore') as file:
-        source = file.read()
-        # print(f"source: {source}")
-
-
-        # soup = BeautifulSoup(source, "lxml")
-        soup = BeautifulSoup(source, 'html.parser')
-        # print(f"soup: {soup}")
-
-        # Нахождение элемента <a> с id="video-title-link"
-        a_tag = soup.find('a', id='video-title-link')
-
-        # Получение значения атрибута "title"
-        title = a_tag['title']
-
-        print(title)
+        print(text_after_title)
 
 
 
 if __name__ == "__main__":
-    # downloadSiteToFile(url)
+    downloadSiteToFile(url)
     # findAllVideosInFile("./Assets/index.html")
-    findAllVideosInFile(r"E:\PythonProjects\ytVideoNamesDumper\Assets\index.html")
+    # findAllVideosInFile(r"E:\PythonProjects\ytVideoNamesDumper\Assets\index.html")
