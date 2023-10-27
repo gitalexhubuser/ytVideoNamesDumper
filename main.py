@@ -3,10 +3,10 @@ from bs4 import BeautifulSoup
 import json
 
 # url = 'https://www.youtube.com/@alex.dubovyck.videos/videos'
-url = 'https://www.youtube.com/feeds/videos.xml?channel_id=UCjDdSdLJbbV0UBtzKpClmig'
+# url = 'https://www.youtube.com/feeds/videos.xml?channel_id=UCjDdSdLJbbV0UBtzKpClmig' # me
+url = 'https://www.youtube.com/feeds/videos.xml?channel_id=UCVws9TRZN49QxiIk4Q3VOgg' # atom
 
 def downloadSiteToFile(url):
-
     response = requests.get(url)
 
     if response.status_code == 200:
@@ -15,13 +15,13 @@ def downloadSiteToFile(url):
         source = response.text
         # print("source:", source)
 
-        soup = BeautifulSoup(source, "xml") # html.parser lxml
+        soup = BeautifulSoup(source, "xml")  # html.parser lxml
 
-        # Поиск тега media:title и извлечение текста после него
-        media_title_tag = soup.find('media:title')
-        text_after_title = media_title_tag.get_text(strip=True)
-
-        print(text_after_title)
+        # Поиск всех тегов media:title и извлечение текста после каждого из них
+        media_title_tags = soup.find_all('media:title')
+        for media_title_tag in media_title_tags:
+            text_after_title = media_title_tag.get_text(strip=True)
+            print(text_after_title)
 
 
 
