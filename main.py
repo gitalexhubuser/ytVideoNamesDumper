@@ -5,11 +5,35 @@ import json
 # URL сайта, с которого нужно собрать информацию
 url = 'https://www.youtube.com/@alex.dubovyck.videos/videos'
 
-# Отправка GET-запроса к сайту
-response = requests.get(url)
+def downloadSiteToFile(url):
 
-# Создание объекта BeautifulSoup для парсинга HTML
-# soup = BeautifulSoup(response.text, 'html.parser')
-soup = BeautifulSoup(response.text, "lxml")
+    response = requests.get(url)
 
-print("soup", type(soup)) # soup <class 'bs4.BeautifulSoup'>
+    if response.status_code == 200:
+        print("Ответ 200!")
+
+        source = response.text
+        print("source: ", source)
+
+        # Запись содержимого в файл
+        with open("./Assets/index.html", "w", encoding="utf-8") as file:
+            file.write(source)
+
+        print("Сайт успешно сохранен в файле test.html")
+
+
+def findAllVideosInFile(filePath):
+    with open(filePath, encoding="utf8", errors='ignore') as file:
+        source = file.read()
+        print(f"source: {source}")
+
+        # sirus_site = BeautifulSoup(source, "lxml")
+
+        # if source is not None:
+        #     sirus_site = BeautifulSoup(source, "lxml")
+            ###########################################
+
+
+if __name__ == "__main__":
+    downloadSiteToFile(url)
+    downloadSiteToFile("./Assets/index.html")
