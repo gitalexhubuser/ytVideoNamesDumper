@@ -87,10 +87,6 @@ url = 'https://www.youtube.com/feeds/videos.xml?channel_id=UCVws9TRZN49QxiIk4Q3V
 
 </details>
 
-TODO:
-
-[Смотрим видео]()
-
 ---
 
 ## Установка
