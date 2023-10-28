@@ -1,8 +1,8 @@
 # ytVideoNamesDumper
 
 <p align="center">
-    <img width="30%" src="https://i.imgur.com/88MIcf0.png">
-    <img width="30%" src="https://i.imgur.com/FYQiKEv.png">
+    <img width="70%" src="https://i.imgur.com/88MIcf0.png">
+    <img width="50%" src="https://i.imgur.com/FYQiKEv.png">
 </p>
 
 ## Описание
