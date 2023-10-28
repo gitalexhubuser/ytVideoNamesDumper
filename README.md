@@ -9,6 +9,8 @@
 
 Получаем название всех видеороликов с нужного канала.
 
+В репозитории представлены [3 способа](https://github.com/gitalexhubuser/ytVideoNamesDumper#%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5) как это сделать!
+
 Вручную это делал через [Web Scraper - Free Web Scraping](https://chrome.google.com/webstore/detail/web-scraper-free-web-scra/jnhgnonknehpejjnehehllkliplmbmhn)
 
 <details>
@@ -49,14 +51,17 @@ Parent selectors `_root`
 ### Использование (через RSS reader)
 
 - Устанавливаем [проект](https://github.com/gitalexhubuser/ytVideoNamesDumper/tree/6f5691e7b3af995e50a0d2cabcc8bec9e0f3610d)
-- В url (7-я строка) передаём ссылку на канал
+- В url передаём ссылку на канал
+```bash
+url = 'https://www.youtube.com/feeds/videos.xml?channel_id=UCVws9TRZN49QxiIk4Q3VOgg' # atom
+```
 - Запускаем `main.py`
 
 ### Использование (через Selenium)
 
 - Ввоидим название канала для дампа, в файл `main.py`, строка `driver.get(" ссылку сюда! ")`
 - Запускаем `run.cmd`
-- Забираем файл с всеми видеороликами в папке results
+- Получаем текстовый файл с всеми видеороликами в папке results
 
 ---
 
