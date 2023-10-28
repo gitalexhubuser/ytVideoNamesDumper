@@ -42,6 +42,18 @@ Parent selectors `_root`
 
 ## Использование
 
+### Использование (через Web Scrapper)
+
+- [Смотрим видео](https://youtu.be/BxCTb4CjxZA)
+
+### Использование (через RSS reader)
+
+- Устанавливаем [проект](https://github.com/gitalexhubuser/ytVideoNamesDumper/tree/6f5691e7b3af995e50a0d2cabcc8bec9e0f3610d)
+- В url (7-я строка) передаём ссылку на канал
+- Запускаем `main.py`
+
+### Использование (через Selenium)
+
 - Ввоидим название канала для дампа, в файл `main.py`, строка `driver.get(" ссылку сюда! ")`
 - Запускаем `run.cmd`
 - Забираем файл с всеми видеороликами в папке results
