@@ -64,11 +64,26 @@ url = 'https://www.youtube.com/feeds/videos.xml?channel_id=UCVws9TRZN49QxiIk4Q3V
 ```
 - Запускаем `main.py`
 
+<details>
+<summary>Результат</summary>
+
+![](./Assets/Images/xxx.png)
+
+</details>
+
 ### Использование (через Selenium)
 
 - Ввоидим название канала для дампа, в файл `main.py`, строка `driver.get(" ссылку сюда! ")`
 - Запускаем `run.cmd`
 - Получаем текстовый файл с всеми видеороликами в папке results
+
+<details>
+<summary>Результат</summary>
+
+![](./Assets/Images/explorer_iScMSbJEJC.png)
+![](./Assets/Images/notepad_lwSNWwo0uf.png)
+
+</details>
 
 ---
 
