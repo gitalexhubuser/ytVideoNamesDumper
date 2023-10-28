@@ -26,7 +26,9 @@ Parent selectors `_root`
 
 </details>
 
-Проект похож на [BogatovSirusCharDumper](https://github.com/gitalexhubuser/BogatovSirusCharDumper)
+Переделал в полноценный проект на Python, который при помощи Selenium - открывает сайт и дампит названия роликов в файл!
+
+**Ps:** проект похож на [BogatovSirusCharDumper](https://github.com/gitalexhubuser/BogatovSirusCharDumper)
 
 ---
 
@@ -34,6 +36,20 @@ Parent selectors `_root`
 
 - [x] "RSS reader" последних 15 роликов [коммит](https://github.com/gitalexhubuser/ytVideoNamesDumper/tree/6f5691e7b3af995e50a0d2cabcc8bec9e0f3610d)
 - [x] Дампер всех всех видео с вкладки /videos (Selenium)
+
+---
+
+## Использование
+
+- Ввоидим название канала для дампа, в файл `main.py`, строка `driver.get(" ссылку сюда! ")`
+- Запускаем `run.cmd`
+- Забираем файл с всеми видеороликами в папке results
+
+---
+
+## Установка
+
+TODO
 
 ---
 
