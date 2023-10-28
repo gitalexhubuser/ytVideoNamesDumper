@@ -48,6 +48,13 @@ Parent selectors `_root`
 
 - [Смотрим видео](https://youtu.be/BxCTb4CjxZA)
 
+<details>
+<summary>Результат</summary>
+
+![](./Assets/Images/chrome_1Xfk8q7k3c.png)
+
+</details>
+
 ### Использование (через RSS reader)
 
 - Устанавливаем [проект](https://github.com/gitalexhubuser/ytVideoNamesDumper/tree/6f5691e7b3af995e50a0d2cabcc8bec9e0f3610d)
