@@ -32,7 +32,7 @@ Parent selectors `_root`
 
 ## Возможности
 
-- [x] "RSS reader" последних 15 роликов [комит](https://github.com/gitalexhubuser/ytVideoNamesDumper/tree/6f5691e7b3af995e50a0d2cabcc8bec9e0f3610d)
+- [x] "RSS reader" последних 15 роликов [коммит](https://github.com/gitalexhubuser/ytVideoNamesDumper/tree/6f5691e7b3af995e50a0d2cabcc8bec9e0f3610d)
 - [x] Дампер всех всех видео с вкладки /videos (Selenium)
 
 ---
