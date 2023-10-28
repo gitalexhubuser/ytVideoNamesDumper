@@ -9,7 +9,7 @@
 
 Получаем название всех видеороликов с нужного канала.
 
-Вручную это делал через [Web Scraper - Free Web Scraping](chrome://extensions/?id=jnhgnonknehpejjnehehllkliplmbmhn)
+Вручную это делал через [Web Scraper - Free Web Scraping](https://chrome.google.com/webstore/detail/web-scraper-free-web-scra/jnhgnonknehpejjnehehllkliplmbmhn)
 
 <details>
 <summary>Web Scraper</summary>
