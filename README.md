@@ -55,6 +55,8 @@ Parent selectors `_root`
 
 </details>
 
+---
+
 ### Использование (через xml RSS ссылку)
 
 - Устанавливаем [проект](https://github.com/gitalexhubuser/ytVideoNamesDumper/tree/6f5691e7b3af995e50a0d2cabcc8bec9e0f3610d)
@@ -72,6 +74,8 @@ url = 'https://www.youtube.com/feeds/videos.xml?channel_id=UCVws9TRZN49QxiIk4Q3V
 </details>
 
 - [Смотрим видео](https://youtu.be/fn6RgjSZfYY)
+
+---
 
 ### Использование (через Selenium)
 
