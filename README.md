@@ -15,9 +15,13 @@
 <summary>Web Scraper</summary>
 
 С использованием:
+
 Selector `yt-formatted-string#video-title`
+
 type `SelectorText`
+
 Multiple `yes`
+
 Parent selectors `_root`
 
 </details>
