@@ -1,3 +1,17 @@
+Как узнать модель материнской платы - msinfo32 | alexdubovyckvideos
+Как отключить «Эффекты Прозрачности» Win10 | alexdubovyckvideos
+Как включить виртуализацию в BIOS | alexdubovyckvideos
+Win+E - Открыть "Мой компьютер" | alexdubovyckvideos
+Как отключить подсветку на материнской плате ASUS, при выключенном ПК | alexdubovyckvideos
+Поиск по истории внутри коммитов! | alexdubovyckvideos
+Warning remote HEAD refers to nonexistent ref, unable to checkout | alexdubovyckvideos
+Как переместить столбцы местами в Excel | alexdubovyckvideos
+error: failed to push some refs to ' | alexdubovyckvideos
+Не удается открыть презентацию | alexdubovyckvideos
+Как удалить ассоциацию с Git | alexdubovyckvideos
+Как поставить комментарий в bat & cmd | alexdubovyckvideos
+Дампим названия последних 15 роликов с ют - через xml RSS ссылку | alexdubovyckvideos
+Скачиваем названия всех видео на ют - через Web Scraper | alexdubovyckvideos
 Как перематывать shorts видео | alexdubovyckvideos
 Фишка: ускорение видео на ютубе, при зажатом лкм | alexdubovyckvideos
 Тёмная тема в Power Point | alexdubovyckvideos
@@ -24,4 +38,4 @@ shell:startup - команда, чтоб попасть в папку "Авто�
 Убираем ВСЕ эффекты в PR | alexdubovyckvideos
 Установка auto-edidor (Python) | alexdubovyckvideos
 Как изменить язык в Adobe Premiere Pro на английский | alexdubovyckvideos
-26
+40

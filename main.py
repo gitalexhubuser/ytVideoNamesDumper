@@ -8,8 +8,8 @@ webdriver_path = r'E:\PythonProjects\ytVideoNamesDumper\Assets\geckodriver.exe' 
 driver = webdriver.Firefox(service=Service(executable_path=webdriver_path)) # Создание экземпляра драйвера
 
 # Загрузка страницы
-driver.get("https://www.youtube.com/@peoplepro/videos")
-# driver.get('https://www.youtube.com/@alex.dubovyck.videos/videos')
+# driver.get("https://www.youtube.com/@peoplepro/videos")
+driver.get('https://www.youtube.com/@alex.dubovyck.videos/videos')
 
 channel_name = driver.current_url.split('.youtube.com/')[1].replace('/videos', '') # Получаем название канала из URL
 # print("channel_name", channel_name) # @AccLeiTo/videos
